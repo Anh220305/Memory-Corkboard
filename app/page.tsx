@@ -155,7 +155,6 @@ export default function DigitalCorkboard() {
                 onClick={() => setShowLibrary(!showLibrary)}
                 className="text-amber-700 hover:text-amber-900"
               >
-                <Library className="w-4 h-4 mr-2" />
                 Library
               </Button>
               <Button
@@ -186,7 +185,6 @@ export default function DigitalCorkboard() {
                 onClick={() => setShowLibrary(!showLibrary)}
                 className="text-amber-700 hover:text-amber-900"
               >
-                <Library className="w-4 h-4 mr-2" />
                 Library
               </Button>
               <Button
@@ -204,8 +202,11 @@ export default function DigitalCorkboard() {
 
       {/* Main Corkboard */}
       <div
-        className={`${isFullscreen ? "fixed inset-0 z-40" : "pt-16"} flex items-center justify-center min-h-screen`}
+        className={`${isFullscreen ? "fixed inset-0 z-40" : "pt-16"} flex flex-col items-center justify-center min-h-screen`}
       >
+        <div className="text-center mb-6">
+          <p className="text-lg text-amber-800 font-medium">Add your memories and notes on a digital corkboard</p>
+        </div>
         <div
           ref={corkboardRef}
           className="w-[800px] h-[600px] relative overflow-hidden rounded-lg"
