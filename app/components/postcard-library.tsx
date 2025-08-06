@@ -68,7 +68,7 @@ export default function PostcardLibrary({ postcards, onClose }: PostcardLibraryP
       <div className="fixed right-0 top-16 bottom-0 w-96 bg-white/95 backdrop-blur-sm border-l border-amber-200 z-40 overflow-hidden flex flex-col">
         <div className="p-6 border-b border-amber-200">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-amber-900">Memory Library</h2>
+            <h2 className="text-xl font-normal text-amber-900">Memory Library</h2>
             <Button variant="ghost" size="sm" onClick={onClose}>
               <X className="w-4 h-4" />
             </Button>

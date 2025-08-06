@@ -34,9 +34,9 @@ export default function Postcard({ postcard }: PostcardProps) {
   }
 
   const fontClasses = {
-    handwritten: "font-mono",
-    elegant: "font-serif",
-    casual: "font-sans",
+    handwritten: "font-normal",
+    elegant: "font-normal",
+    casual: "font-normal",
   }
 
   const effectClasses = {

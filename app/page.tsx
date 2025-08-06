@@ -167,7 +167,7 @@ export default function DigitalCorkboard() {
               </Button>
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2">
-              <h1 className="text-2xl font-bold text-amber-900">Digital Corkboard</h1>
+              <h1 className="text-2xl font-normal text-amber-900">Digital Corkboard</h1>
             </div>
             <div className="flex items-center space-x-4 invisible">
               <Button
@@ -204,9 +204,9 @@ export default function DigitalCorkboard() {
       <div
         className={`${isFullscreen ? "fixed inset-0 z-40" : "pt-16"} flex flex-col items-center justify-center min-h-screen`}
       >
-        <div className="text-center mb-6">
-          <p className="text-lg text-amber-800 font-medium">Add your memories and notes on a digital corkboard</p>
-        </div>
+                    <div className="text-center mb-6">
+              <p className="text-lg text-amber-800 font-normal">Add your memories and notes on a digital corkboard</p>
+            </div>
         <div
           ref={corkboardRef}
           className="w-[800px] h-[600px] relative overflow-hidden rounded-lg"

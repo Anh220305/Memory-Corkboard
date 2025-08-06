@@ -36,9 +36,9 @@ export default function PostcardCreator({ onClose, onSave }: PostcardCreatorProp
   ]
 
   const fonts = [
-    { name: "handwritten", class: "font-mono", label: "Handwritten" },
-    { name: "elegant", class: "font-serif", label: "Elegant" },
-    { name: "casual", class: "font-sans", label: "Casual" },
+    { name: "handwritten", class: "font-normal", label: "Handwritten" },
+    { name: "elegant", class: "font-normal", label: "Elegant" },
+    { name: "casual", class: "font-normal", label: "Casual" },
   ]
 
   const effects = [
@@ -57,7 +57,7 @@ export default function PostcardCreator({ onClose, onSave }: PostcardCreatorProp
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white/95 backdrop-blur-sm">
         <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle className="text-2xl text-amber-900">Create Your Postcard</CardTitle>
+          <CardTitle className="text-2xl font-normal text-amber-900">Create Your Postcard</CardTitle>
           <Button variant="ghost" size="sm" onClick={onClose}>
             <X className="w-4 h-4" />
           </Button>
@@ -173,7 +173,7 @@ export default function PostcardCreator({ onClose, onSave }: PostcardCreatorProp
                     ${font === fontOption.name ? "border-amber-600 ring-2 ring-amber-200" : "border-gray-300 hover:border-gray-400"}
                   `}
                 >
-                  <span className={`text-sm font-medium text-gray-800 ${fontOption.class}`}>{fontOption.label}</span>
+                  <span className={`text-sm font-normal text-gray-800 ${fontOption.class}`}>{fontOption.label}</span>
                 </button>
               ))}
             </div>
@@ -195,7 +195,7 @@ export default function PostcardCreator({ onClose, onSave }: PostcardCreatorProp
                     `}
                   >
                     <Icon className="w-5 h-5 text-gray-600" />
-                    <span className="text-sm font-medium text-gray-800">{effectOption.label}</span>
+                    <span className="text-sm font-normal text-gray-800">{effectOption.label}</span>
                   </button>
                 )
               })}
